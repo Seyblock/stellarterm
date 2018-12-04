@@ -680,6 +680,19 @@ directory.addWildcard('pr.network', {
   issuer: 'GAZPKDTEZ5UM3BF4E7FL7EMXRMLH76F2TNVXRLOF6SCVXOFWSPCEWFI5',
 });
 
+directory.addAnchor({
+  domain: 'seyblock.com',
+  website: 'https://seyblock.com/',
+  logo: 'seyblock.com',
+  color: '#ed0c61',
+  displayName: 'SEY',
+});
+directory.addAsset('seyblock.com', {
+  code: 'SEY',
+  issuer: 'GAPRT253RYERCNGO5PLZWL7OE6YKTABK5XXZS4BFSONXXD65PM5APY6S',
+});
+
+
 // Pairs involving "fiat" assets
 // "Fiat" asset should be counterSelling
 directory.addPair({
@@ -954,6 +967,11 @@ directory.addPair({
 });
 directory.addPair({
   baseBuying: ['SIX', 'six.network'],
+  counterSelling: ['XLM', 'native'],
+});
+
+directory.addPair({
+  baseBuying: ['SEY', 'seyblock.com'],
   counterSelling: ['XLM', 'native'],
 });
 
